@@ -1,0 +1,140 @@
+/* carta.css */
+
+/* Importando a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Remover margens e paddings padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #080f1a; /* Fundo preto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif; /* Aplicando a fonte Inter */
+}
+
+/* Estilo da carta */
+.carta {
+  width: 90%;
+  max-width: 600px; /* Limitar a largura máxima para telas maiores */
+  background-color: #122139; /* Cor de fundo da carta */
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: 'Inter', sans-serif; /* Garantindo que a fonte Inter também se aplique aqui */
+}
+
+/* Corpo da carta */
+.carta-body {
+  padding: 30px;
+  color: #fff;
+}
+
+.titulo-carta {
+  font-size: 1.8rem; /* Tamanho de fonte maior para telas maiores */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff4d6d;
+}
+
+.texto-carta {
+  font-size: 1rem; /* Tamanho de fonte ajustado */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* botão da carta (voltar à flor) */
+.voltar-btn {
+  background-color: #ff4d6d; /* Cor rosa romântico */
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.voltar-btn:hover {
+  background-color: #d83f5b;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+
+/* Para telas pequenas (sm) */
+@media (max-width: 768px) {
+  .carta {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .titulo-carta {
+    font-size: 1.5rem; /* Ajustando o tamanho do título para telas menores */
+  }
+
+  .texto-carta {
+    font-size: 0.95rem; /* Ajustando o tamanho da descrição */
+  }
+
+  .voltar-btn {
+    font-size: 1rem; /* Ajustando o tamanho do botão */
+    padding: 10px 20px;
+  }
+}
+
+/* Para telas muito pequenas (xs) */
+@media (max-width: 480px) {
+  .carta {
+    width: 95%;
+    padding: 15px;
+    margin-left: 10px;
+  }
+
+  .titulo-carta {
+    font-size: 1.3rem; /* Ajustando ainda mais para telas menores */
+  }
+
+  .texto-carta {
+    font-size: 0.9rem; /* Ajustando para telas muito pequenas */
+  }
+
+  .voltar-btn {
+    font-size: 0.9rem; /* Ajustando o tamanho do botão */
+    padding: 8px 16px;
+    margin-left: 10px;
+  }
+}
+
+/* Para telas grandes */
+@media (min-width: 1200px) {
+  .carta {
+    width: 70%;
+  }
+
+  .titulo-carta {
+    font-size: 2rem; /* Tamanho do título ajustado para telas grandes */
+  }
+
+  .texto-carta {
+    font-size: 1.1rem; /* Ajustando o tamanho da descrição para telas grandes */
+  }
+
+  .voltar-btn {
+    font-size: 1.2rem; /* Ajustando o tamanho do botão para telas grandes */
+    padding: 14px 28px;
+  }
+}
